@@ -211,6 +211,7 @@ class VacuumCard extends LitElement {
       fan_speed_list,
       battery_level,
       battery_icon,
+      repetitions,
       friendly_name,
     } = entity.attributes;
 
@@ -220,6 +221,7 @@ class VacuumCard extends LitElement {
       fan_speed_list,
       battery_level,
       battery_icon,
+      repetitions,
       friendly_name,
     };
   }
@@ -268,6 +270,17 @@ class VacuumCard extends LitElement {
       <div class="tip" @click="${() => this.handleMore()}">
         <ha-icon icon="${battery_icon}"></ha-icon>
         <span class="icon-title">${battery_level}%</span>
+      </div>
+    `;
+  }
+
+  renderRepetitions() {
+    const { repetitions } = this.getAttributes(this.entity);
+
+    return html`
+      <div class="tip" @click="${() => this.handleMore()}">
+        <ha-icon icon="mdi:repeat-variant"></ha-icon>
+        <span class="icon-title">${repetitions}%</span>
       </div>
     `;
   }
@@ -511,7 +524,7 @@ class VacuumCard extends LitElement {
         <div class="preview">
           <div class="header">
             <div class="tips">
-              ${this.renderSource()} ${this.renderBattery()}
+              ${this.renderSource()} ${this.renderBattery()} ${this.renderRepetitions()}
             </div>
             <ha-icon-button
               class="more-info"
