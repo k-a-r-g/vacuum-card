@@ -285,7 +285,7 @@ MIT © [Denys Dovhan][denysdovhan]
 [npm-url]: https://npmjs.org/package/vacuum-card
 [npm-image]: https://img.shields.io/npm/v/vacuum-card.svg?style=flat-square
 [hacs-url]: https://github.com/hacs/integration
-[hacs-image]: https://img.shields.io/badge/hacs-default-orange.svg?style=flat-square
+[hacs-image]: https://img.shields.io/badge/HACS-Custom-41BDF5.svg?style=flat-square
 [patreon-url]: https://patreon.com/denysdovhan
 [patreon-image]: https://img.shields.io/badge/support-patreon-F96854.svg?style=flat-square
 [buymeacoffee-url]: https://patreon.com/denysdovhan
